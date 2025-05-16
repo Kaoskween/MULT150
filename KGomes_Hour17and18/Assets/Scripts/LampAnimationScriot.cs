@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpinScript : MonoBehaviour
+public class LampAnimationScriot : MonoBehaviour
 {
     Animator anim;
     // Start is called before the first frame update
@@ -18,5 +18,18 @@ public class SpinScript : MonoBehaviour
         {
             anim.SetTrigger("Active");
         }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            anim.SetTrigger("Active2");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            anim.SetTrigger("Active3");
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            anim.SetTrigger("Active4");
+        }
     }
-}
+
+    }
